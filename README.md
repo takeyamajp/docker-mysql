@@ -1,1 +1,3 @@
-# docker-mysql
+FROM mysql
+
+MAINTAINER "Hiroki Takeyama"
