@@ -6,6 +6,8 @@ ENV TZ Asia/Tokyo
 
 # mysql charset
 RUN { \
+    echo '[client]'; \
+    echo 'default-character-set = utf8mb4'; \
     echo '[mysqld]'; \
     echo 'init-connect = SET NAMES utf8'; \
     echo 'collation-server = utf8_unicode_ci'; \
