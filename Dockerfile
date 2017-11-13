@@ -9,9 +9,9 @@ RUN { \
     echo '[client]'; \
     echo 'default-character-set = utf8mb4'; \
     echo '[mysqld]'; \
-    echo 'init-connect = SET NAMES utf8'; \
-    echo 'collation-server = utf8_unicode_ci'; \
-    echo 'character-set-server = utf8'; \
+    echo 'init-connect = SET NAMES utf8mb4'; \
+    echo 'collation-server = utf8mb4_unicode_ci'; \
+    echo 'character-set-server = utf8mb4'; \
     echo 'skip-character-set-client-handshake'; \
     echo 'default_password_lifetime = 0'; \
 } > /etc/mysql/conf.d/charset.cnf
