@@ -6,6 +6,7 @@ ENV TZ Asia/Tokyo
 
 # entrypoint
 RUN { \
+    echo '#!/bin/bash -eu'; \
     echo '{'; \
     echo '    echo "[client]";'; \
     echo '    echo "default-character-set = $MYSQL_CHARSET";'; \
