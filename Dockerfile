@@ -19,8 +19,8 @@ RUN { \
     echo '  echo "default_authentication_plugin = mysql_native_password";'; \
     echo '} > /etc/mysql/conf.d/charset.cnf'; \
     echo 'docker-entrypoint.sh "$@"'; \
-    } > /usr/local/bin/my-entrypoint.sh
-RUN chmod +x /usr/local/bin/my-entrypoint.sh
+    } > /usr/local/bin/my-entrypoint.sh; \
+    chmod +x /usr/local/bin/my-entrypoint.sh;
 ENTRYPOINT ["my-entrypoint.sh"]
 
 # mysql character-set
