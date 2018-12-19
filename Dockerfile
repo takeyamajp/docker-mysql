@@ -17,11 +17,11 @@ RUN { \
     echo 'echo "skip-character-set-client-handshake";'; \
     echo 'echo "default_password_lifetime = 0";'; \
     echo 'echo "default_authentication_plugin = mysql_native_password";'; \
-    echo '} > /etc/mysql/conf.d/charset.cnf'; \
+    echo '} > /etc/mysql/conf.d/charcode.cnf'; \
     echo 'docker-entrypoint.sh "$@"'; \
-    } > /usr/local/bin/my-entrypoint.sh; \
-    chmod +x /usr/local/bin/my-entrypoint.sh;
-ENTRYPOINT ["my-entrypoint.sh"]
+    } > /usr/local/bin/entrypoint.sh; \
+    chmod +x /usr/local/bin/entrypoint.sh;
+ENTRYPOINT ["entrypoint.sh"]
 
 # mysql character-code
 ENV MYSQL_CHARSET utf8mb4
