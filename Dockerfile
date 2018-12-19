@@ -8,15 +8,15 @@ ENV TZ Asia/Tokyo
 RUN { \
     echo '#!/bin/bash -eu'; \
     echo '{'; \
-    echo '  echo "[client]";'; \
-    echo '  echo "default-character-set = ${MYSQL_CHARSET}";'; \
-    echo '  echo "[mysqld]";'; \
-    echo '  echo "init-connect = SET NAMES ${MYSQL_CHARSET}";'; \
-    echo '  echo "character-set-server = ${MYSQL_CHARSET}";'; \
-    echo '  echo "collation-server = ${MYSQL_COLLATION}";'; \
-    echo '  echo "skip-character-set-client-handshake";'; \
-    echo '  echo "default_password_lifetime = 0";'; \
-    echo '  echo "default_authentication_plugin = mysql_native_password";'; \
+    echo 'echo "[client]";'; \
+    echo 'echo "default-character-set = ${MYSQL_CHARSET}";'; \
+    echo 'echo "[mysqld]";'; \
+    echo 'echo "init-connect = SET NAMES ${MYSQL_CHARSET}";'; \
+    echo 'echo "character-set-server = ${MYSQL_CHARSET}";'; \
+    echo 'echo "collation-server = ${MYSQL_COLLATION}";'; \
+    echo 'echo "skip-character-set-client-handshake";'; \
+    echo 'echo "default_password_lifetime = 0";'; \
+    echo 'echo "default_authentication_plugin = mysql_native_password";'; \
     echo '} > /etc/mysql/conf.d/charset.cnf'; \
     echo 'docker-entrypoint.sh "$@"'; \
     } > /usr/local/bin/my-entrypoint.sh; \
