@@ -2,8 +2,12 @@ FROM mysql
 MAINTAINER "Hiroki Takeyama"
 
 ENV MYSQL_CHARSET utf8mb4  
-ENV MYSQL_COLLATION utf8mb4_general_ci  
+ENV MYSQL_COLLATION utf8mb4_general_ci
+
 ENV MYSQL_ROOT_PASSWORD root
+ENV MYSQL_DATABASE db  
+ENV MYSQL_USER user  
+ENV MYSQL_PASSWORD user
 
 VOLUME /var/lib/mysql
 
