@@ -27,7 +27,7 @@ ENTRYPOINT ["entrypoint.sh"]
 ENV MYSQL_CHARSET utf8mb4
 ENV MYSQL_COLLATION utf8mb4_general_ci
 
-# mysql conditions
+# mysql database conditions
 ENV MYSQL_ROOT_PASSWORD root
 ENV MYSQL_DATABASE db
 ENV MYSQL_USER user
