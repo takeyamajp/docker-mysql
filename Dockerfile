@@ -1,9 +1,6 @@
 FROM mysql
 MAINTAINER "Hiroki Takeyama"
 
-# timezone
-ENV TZ Asia/Tokyo
-
 # entrypoint
 RUN { \
     echo '#!/bin/bash -eu'; \
@@ -23,11 +20,11 @@ RUN { \
     chmod +x /usr/local/bin/entrypoint.sh;
 ENTRYPOINT ["entrypoint.sh"]
 
-# mysql character-code
+ENV TZ Asia/Tokyo
+
 ENV MYSQL_CHARSET utf8mb4
 ENV MYSQL_COLLATION utf8mb4_general_ci
 
-# mysql database conditions
 ENV MYSQL_ROOT_PASSWORD root
 ENV MYSQL_DATABASE db
 ENV MYSQL_USER user
