@@ -4,6 +4,7 @@ MAINTAINER "Hiroki Takeyama"
 # entrypoint
 RUN { \
     echo '#!/bin/bash -eu'; \
+    echo 'TZ=${TIMEZONE}'; \
     echo '{'; \
     echo 'echo "[client]"'; \
     echo 'echo "default-character-set = ${MYSQL_CHARSET}"'; \
@@ -20,7 +21,7 @@ RUN { \
     chmod +x /usr/local/bin/entrypoint.sh;
 ENTRYPOINT ["entrypoint.sh"]
 
-ENV TZ Asia/Tokyo
+ENV TIMEZONE Asia/Tokyo
 
 ENV MYSQL_CHARSET utf8mb4
 ENV MYSQL_COLLATION utf8mb4_general_ci
