@@ -1,10 +1,12 @@
 FROM mysql
 MAINTAINER "Hiroki Takeyama"
 
+# timezone
+ENV TZ Asia/Tokyo
+
 # entrypoint
 RUN { \
     echo '#!/bin/bash -eu'; \
-    echo 'TZ=${TIMEZONE}'; \
     echo '{'; \
     echo 'echo "[client]"'; \
     echo 'echo "default-character-set = ${MYSQL_CHARSET}"'; \
@@ -21,11 +23,11 @@ RUN { \
     chmod +x /usr/local/bin/entrypoint.sh;
 ENTRYPOINT ["entrypoint.sh"]
 
-ENV TIMEZONE Asia/Tokyo
-
+# mysql character-code
 ENV MYSQL_CHARSET utf8mb4
 ENV MYSQL_COLLATION utf8mb4_general_ci
 
+# mysql database conditions
 ENV MYSQL_ROOT_PASSWORD root
 ENV MYSQL_DATABASE db
 ENV MYSQL_USER user
