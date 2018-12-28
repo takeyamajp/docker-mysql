@@ -1,7 +1,7 @@
 FROM mysql  
 MAINTAINER "Hiroki Takeyama"
 
-ENV TIMEZONE Asia/Tokyo
+ENV TZ Asia/Tokyo
 
 ENV MYSQL_CHARSET utf8mb4  
 ENV MYSQL_COLLATION utf8mb4_general_ci
