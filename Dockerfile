@@ -18,7 +18,7 @@ RUN { \
     echo 'echo "default_password_lifetime = 0"'; \
     echo 'echo "default_authentication_plugin = mysql_native_password"'; \
     echo '} > /etc/mysql/conf.d/charcode.cnf'; \
-    echo 'exec "docker-entrypoint.sh $@"'; \
+    echo 'exec "/usr/local/bin/docker-entrypoint.sh $@"'; \
     } > /usr/local/bin/entrypoint.sh; \
     chmod +x /usr/local/bin/entrypoint.sh;
 ENTRYPOINT ["entrypoint.sh"]
