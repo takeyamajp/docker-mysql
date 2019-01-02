@@ -1,3 +1,6 @@
+[![Docker Stars](https://img.shields.io/docker/stars/takeyamajp/mysql.svg?style=flat-square)](https://hub.docker.com/r/takeyamajp/mysql/)
+[![Docker Pulls](https://img.shields.io/docker/pulls/takeyamajp/mysql.svg?style=flat-square)](https://hub.docker.com/r/takeyamajp/mysql/)
+
 FROM mysql  
 MAINTAINER "Hiroki Takeyama"
 
