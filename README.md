@@ -1,7 +1,7 @@
 # mysql
 [![Docker Stars](https://img.shields.io/docker/stars/takeyamajp/mysql.svg)](https://hub.docker.com/r/takeyamajp/mysql/)
 [![Docker Pulls](https://img.shields.io/docker/pulls/takeyamajp/mysql.svg)](https://hub.docker.com/r/takeyamajp/mysql/)
-[![](https://img.shields.io/badge/GitHub-Dockerfile-green.svg)](https://github.com/takeyamajp/docker-mysql/blob/master/Dockerfile)
+[![](https://img.shields.io/badge/GitHub-Dockerfile-orange.svg)](https://github.com/takeyamajp/docker-mysql/blob/master/Dockerfile)
 [![license](https://img.shields.io/github/license/takeyamajp/docker-mysql.svg)](https://github.com/takeyamajp/docker-mysql/blob/master/LICENSE)
 
     FROM mysql  
