@@ -3,6 +3,10 @@
 [![Docker Pulls](https://img.shields.io/docker/pulls/takeyamajp/mysql.svg)](https://hub.docker.com/r/takeyamajp/mysql/)
 [![license](https://img.shields.io/github/license/takeyamajp/docker-mysql.svg)](https://github.com/takeyamajp/docker-mysql/blob/master/LICENSE)
 
+### Supported tags and respective Dockerfile links  
+- [`latest`, `mysql:8`](https://github.com/takeyamajp/docker-mysql/blob/master/mysql8/Dockerfile)
+
+### Image summary
     FROM mysql:8  
     MAINTAINER "Hiroki Takeyama"
     
