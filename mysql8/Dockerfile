@@ -1,4 +1,4 @@
-FROM mysql
+FROM mysql:8
 MAINTAINER "Hiroki Takeyama"
 
 # entrypoint
