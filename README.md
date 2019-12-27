@@ -20,6 +20,6 @@
     ENV MYSQL_USER user  
     ENV MYSQL_PASSWORD password
     
-    VOLUME /var/lib/mysql
+    VOLUME /mysql
     
     EXPOSE 3306
