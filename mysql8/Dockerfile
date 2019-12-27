@@ -19,10 +19,10 @@ RUN { \
     echo 'echo "default_password_lifetime = 0"'; \
     echo 'echo "default_authentication_plugin = mysql_native_password"'; \
     echo '} > /etc/mysql/conf.d/charcode.cnf'; \
+    echo 'chown mysql:mysql /mysql'; \
     echo 'exec "$@"'; \
     } > /usr/local/bin/entrypoint.sh; \
-    chmod +x /usr/local/bin/entrypoint.sh; \
-    chown mysql:mysql /mysql;
+    chmod +x /usr/local/bin/entrypoint.sh;
 ENTRYPOINT ["entrypoint.sh"]
 
 # timezone
