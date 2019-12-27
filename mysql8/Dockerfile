@@ -3,6 +3,7 @@ MAINTAINER "Hiroki Takeyama"
 
 # mysql
 RUN mkdir /mysql; \
+    chown mysql:mysql /mysql; \
     sed -i 's/^\(datadir\) .*/\1 = \/mysql/' /etc/mysql/my.cnf;
 
 # entrypoint
