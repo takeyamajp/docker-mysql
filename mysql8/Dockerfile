@@ -28,10 +28,10 @@ ENV MYSQL_CHARSET utf8mb4
 ENV MYSQL_COLLATION utf8mb4_general_ci
 
 # mysql database conditions
-ENV MYSQL_ROOT_PASSWORD root
+ENV MYSQL_ROOT_PASSWORD password
 ENV MYSQL_DATABASE db
 ENV MYSQL_USER user
-ENV MYSQL_PASSWORD user
+ENV MYSQL_PASSWORD password
 
 VOLUME /var/lib/mysql
 
