@@ -23,7 +23,6 @@ RUN { \
     echo 'exec "$@"'; \
     } > /usr/local/bin/entrypoint.sh; \
     chmod +x /usr/local/bin/entrypoint.sh;
-ENTRYPOINT ["entrypoint.sh"]
 
 # timezone
 ENV TZ Asia/Tokyo
@@ -42,4 +41,5 @@ VOLUME /mysql
 
 EXPOSE 3306
 
+ENTRYPOINT ["entrypoint.sh"]
 CMD ["docker-entrypoint.sh", "mysqld"]
