@@ -41,5 +41,8 @@ VOLUME /mysql
 
 EXPOSE 3306
 
+# X Protocol
+EXPOSE 33060
+
 ENTRYPOINT ["entrypoint.sh"]
 CMD ["docker-entrypoint.sh", "mysqld"]
