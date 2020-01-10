@@ -27,11 +27,11 @@ RUN { \
 # timezone
 ENV TZ Asia/Tokyo
 
-# mysql character-code
+# character-code
 ENV MYSQL_CHARSET utf8mb4
 ENV MYSQL_COLLATION utf8mb4_general_ci
 
-# mysql database conditions
+# database conditions
 ENV MYSQL_ROOT_PASSWORD password
 ENV MYSQL_DATABASE db
 ENV MYSQL_USER user
