@@ -23,3 +23,6 @@
     VOLUME /mysql
     
     EXPOSE 3306
+    
+    # X Protocol  
+    EXPOSE 33060
