@@ -1,5 +1,5 @@
 # mysql
-Star this repository if it was useful for you.  
+Star this repository if it is useful for you.  
 [![Docker Stars](https://img.shields.io/docker/stars/takeyamajp/mysql.svg)](https://hub.docker.com/r/takeyamajp/mysql/)
 [![Docker Pulls](https://img.shields.io/docker/pulls/takeyamajp/mysql.svg)](https://hub.docker.com/r/takeyamajp/mysql/)
 [![license](https://img.shields.io/github/license/takeyamajp/docker-mysql.svg)](https://github.com/takeyamajp/docker-mysql/blob/master/LICENSE)
